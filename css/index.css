@@ -1,0 +1,412 @@
+.view {
+  max-width: 1200px;
+  min-width: 360px;
+}
+.view .tools {
+  /*固定的头部*/
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-color: #c91523;
+}
+.view .tools .logo {
+  display: flex;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.view .tools .logo h1 a {
+  font-size: 0;
+  display: block;
+  width: 55px;
+  height: 20px;
+  background: url('../images/jd-sprites.png') no-repeat 0 -110px;
+  background-size: 200px 200px;
+}
+.view .tools .search {
+  flex: 1;
+  position: relative;
+  padding: 5px 0;
+}
+.view .tools .search::after {
+  content: ".";
+  font-size: 0;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: url('../images/jd-sprites.png') no-repeat -60px -110px;
+  background-size: 200px 200px;
+}
+.view .tools .search input {
+  border-radius: 15px;
+  text-indent: 25px;
+}
+.view .tools .login {
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.view .adv {
+  /*广告推广*/
+  display: block;
+  width: 100%;
+}
+.view nav {
+  /*导航*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view nav a {
+  width: 25%;
+  padding: 0.15625rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.view nav a img {
+  width: 50%;
+}
+.view nav a span {
+  font-size: 0.4375rem;
+}
+.view .line {
+  width: 100%;
+  height: 0.3125rem;
+  background-color: #f5f5f5;
+}
+.view .timelosing .title {
+  /*倒计时*/
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0.3125rem;
+}
+.view .timelosing .title .zm {
+  display: flex;
+  flex: 1;
+}
+.view .timelosing .title .zm .mb {
+  display: block;
+  height: 0.6875rem;
+  width: 0.5625rem;
+  background: url('../images/jd-sprites.png') no-repeat -2.640625rem -3.4375rem;
+  background-size: 6.25rem 6.25rem;
+  margin: 0 0.46875rem;
+}
+.view .timelosing .title .zm .zsms {
+  color: #c91523;
+  font-size: 0.375rem;
+}
+.view .timelosing .title .djs {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.view .timelosing .title .djs span {
+  background-color: #3d3d3d;
+  color: #fff;
+  margin: 0 0.03125rem;
+  padding: 0 0.0625rem;
+  font-size: 0.5rem;
+}
+.view .timelosing .title .djs span:nth-child(3n) {
+  background-color: #fff;
+  color: #3d3d3d;
+}
+.view .timelosing .title .gdms {
+  flex: 1;
+  text-align: right;
+  font-size: 0.4375rem;
+}
+.view .timelosing .main {
+  display: flex;
+  justify-content: space-between;
+}
+.view .timelosing .main a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.4375rem;
+}
+.view .timelosing .main a div.pr img {
+  height: 3.4375rem;
+  width: auto;
+}
+.view .timelosing .main a div.pr span {
+  position: absolute;
+  color: #fff;
+  background-color: #fdb60a;
+  font-size: 0.4375rem;
+  padding: 0.09375rem 0.15625rem;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+}
+.view .timelosing .main a > span {
+  color: #c91523;
+}
+.view .timelosing .main a del {
+  color: #666;
+}
+.view .discountticket .main {
+  position: absolute;
+  bottom: 0;
+  padding: 0.15625rem;
+  width: 100%;
+  display: flex;
+}
+.view .discountticket .main .main_left {
+  flex: 1;
+}
+.view .discountticket .main .main_right {
+  flex: 1;
+  padding-left: 0.15625rem;
+}
+.view .discountticket .main .main_right a {
+  height: 50%;
+}
+.view .qigeA .three {
+  display: flex;
+}
+.view .qigeA .three a {
+  flex: 1;
+}
+.view .qigeA .four {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .qigeA .four li {
+  width: 50%;
+  /*七个小怪结束*/
+}
+.view .superwet h4 {
+  color: #c91523;
+  padding: 0.09375rem 0.15625rem;
+}
+.view .superwet .nzny {
+  display: flex;
+}
+.view .superwet .nzny .superleft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.view .superwet .nzny .superright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /*特色潮湿结束*/
+}
+.view .jiewu h4 {
+  color: #c91523;
+  padding: 0.09375rem 0.15625rem;
+}
+.view .jiewu .topthree {
+  display: flex;
+}
+.view .jiewu .topthree .jieleft {
+  flex: 1;
+}
+.view .jiewu .topthree .jieright {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .jiewu .topthree .jieright a:nth-child(1) {
+  height: 50%;
+  width: 100%;
+}
+.view .jiewu .topthree .jieright a:nth-child(2) {
+  width: 50%;
+}
+.view .jiewu .topthree .jieright a:nth-child(3) {
+  width: 50%;
+}
+.view .jiewu .bottomeight {
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .jiewu .bottomeight a {
+  width: 25%;
+}
+.view .ruoadv {
+  padding: 0.15625rem;
+}
+.view .amazing h4 {
+  color: #c91523;
+  padding: 0.09375rem 0.15625rem;
+  font-size: 0.4375rem;
+}
+.view .amazing .main {
+  display: flex;
+}
+.view .amazing .main a:nth-child(1) {
+  flex: 4;
+  height: inherit;
+}
+.view .amazing .main a:nth-child(2) {
+  height: inherit;
+  flex: 3;
+}
+.view .amazing .main a:nth-child(2) img {
+  height: inherit;
+  display: block;
+}
+.view .amazing .main a:nth-child(3) {
+  flex: 3;
+  height: inherit;
+}
+.view .amazing .main a:nth-child(3) img {
+  height: 100%;
+  display: block;
+  /*推荐结束*/
+}
+.view .thinkabout h4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.view .thinkabout h4 > span {
+  width: 50%;
+  font-size: 0.4375rem;
+  color: #c91523;
+  padding: 0.09375rem 0.15625rem;
+}
+.view .thinkabout h4 a {
+  text-align: right;
+  width: 50%;
+  font-size: 0.375rem;
+  color: #c91523;
+}
+.view .thinkabout h4 a img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 0.5625rem;
+  height: 0.5625rem;
+}
+.view .thinkabout ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.4375rem;
+}
+.view .thinkabout ul li {
+  width: 50%;
+  padding: 0.3125rem 0.3125rem 0;
+}
+.view .thinkabout ul li .top {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.view .thinkabout ul li .top span {
+  color: #c91523;
+}
+.view .thinkabout ul li .top a {
+  width: 1.375rem;
+  font-size: 0.4375rem;
+  border: 0.03125rem solid #ccc;
+  color: #666;
+}
+.view .thinkabout ul li > a p {
+  height: 1.09375rem;
+  font-size: 0.4375rem;
+  overflow: hidden;
+}
+.view .loadingmore {
+  display: block;
+  color: #666;
+  background-color: #f3f5f7;
+  font-size: 0.4375rem;
+  text-align: center;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  margin-top: 0.15625rem;
+  border-top: 0.03125rem solid #ccc;
+}
+.view footer {
+  background-color: #f3f5f7;
+}
+.view footer .f_nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0.3125rem;
+  border-top: 0.03125rem solid #ccc;
+  border-bottom: 0.03125rem solid #ccc;
+}
+.view footer .f_nav li {
+  width: 25%;
+  border-right: 0.03125rem solid #000;
+}
+.view footer .f_nav li:nth-child(4) {
+  border: none;
+}
+.view footer .f_nav li a {
+  color: #666;
+  font-size: 0.375rem;
+}
+.view footer .download {
+  display: flex;
+  padding: 0.3125rem;
+  border-bottom: 0.03125rem solid #ccc;
+}
+.view footer .download a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view footer .download a span {
+  color: #666;
+}
+.view footer .download a span:nth-child(1) {
+  width: 1.03125rem;
+  height: 1.03125rem;
+  background: url('../images/jd-sprites.png') no-repeat -3.75rem -2.1875rem;
+  background-size: 6.25rem auto;
+}
+.view footer .download a:nth-child(2) span:nth-child(1) {
+  background-position: -1.25rem -2.1875rem;
+}
+.view footer .download a:nth-child(3) span:nth-child(1) {
+  background-position: -2.5rem -2.1875rem;
+}
+.view footer .copy {
+  text-align: center;
+  color: #666;
+  font-size: 0.4375rem;
+  padding: 0.625rem;
+}
+.view .zhicheng img {
+  height: 60px;
+}
+.view .bottomfixed {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.view .bottomfixed a {
+  display: block;
+  width: 20%;
+  float: left;
+}
+.view .bottomfixed a img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
